@@ -1,0 +1,23 @@
+nav{
+    font-weight: bold;
+    z-index: 100;
+}
+.container p{
+    margin: 0;
+    padding: 0;
+}
+.container h5{
+    margin: 0;
+    padding: 0;
+}
+.table{
+    margin-right: 10px;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.321);
+    font-weight: bold;
+}

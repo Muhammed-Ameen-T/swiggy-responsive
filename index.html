@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="icon" href="assets/logo2-removebg-preview.png" type="image/gif" sizes="30x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NAV-BAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed" style="width: 100%;">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-1" href="#"><img class="ml-5" style="width: 2rem;margin-left: 1rem;" src="assets/swiggy-logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div style="justify-content: center;" class="collapse navbar-collapse" id="navbarNav">
+            <ul  class="navbar-nav ">
+              <li class="nav-item">
+                <a style="text-decoration: underline;font-size: 15px;" class="nav-link active" aria-current="page" href="#">Other</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-weight: 400;color: rgba(110, 110, 110, 0.848);font-size: 14px;" class="nav-link" aria-disabled="true">Kozhikode, Kerala, India<i class="fa-solid fa-chevron-down" style="color: #ffffff;margin-left: 10px;"></i></a>
+              </li>
+              <li style="margin-left: 2rem;" class="nav-item">
+                <a class="nav-link" href="#"><img src="" alt=""><img style="width: 1.3rem;margin-right: 7px;" src="assets/corporate-icon.png" alt=""> Swiggy Corporate</a>
+              </li>
+              <li style="margin-left: 2rem;" class="nav-item">
+                <a class="nav-link" href="#"><img src="" alt=""><img style="width: 1.3rem;margin-right: 10px;" src="assets/search-icon.png" alt="">Search</a>
+              </li>
+              <li style="margin-left: 2rem;" class="nav-item">
+                <a class="nav-link" href="#"><img style="width: 1.3rem;margin-right: 10px;" src="assets/oofer-icon.png" alt="">Offers</a>
+              </li>
+              <li style="margin-left: 2rem;" class="nav-item">
+                <a class="nav-link" href="#"><img style="width: 1.3rem;margin-right: 10px;" src="assets/help-icon.png" alt="">Help</a>
+              </li>
+              <li style="margin-left: 2rem;" class="nav-item">
+                <a class="nav-link" href="#"><img style="width: 1.3rem;margin-right: 5px;" src="assets/login-icon.png" alt=""> Sign In</a>
+              </li>
+              <li style="margin-left: 2rem;" class="nav-item">
+                <a class="nav-link" href="#"><img style="width: 1.3rem;margin-right: 10px;" src="assets/cart-icon.png" alt="">Cart</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- whitespace -->
+    <section>
+        <div style="width: 100%;height: 5rem;">
+
+        </div>
+    </section>
+    <!-- FOOD-BANNER -->
+    <section>
+        <div class="container">
+            <div class="col d-inline-flex col-12 mt-2 justify-content-between">
+                <h4 class="fw-bolder">What's on your mind?</h4>
+                <img style="width: 4rem;height: 2rem;" class="float-right" src="assets/arrow-icon.png" alt="">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/chole-bature.avif" alt="">
+                </div>
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/khichdi.avif" alt="">
+                </div>
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/lassi.avif" alt="">
+                </div>
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/tea.avif" alt="">
+                </div>
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/coffee.avif" alt="">
+                </div>
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/noodles.avif" alt="">
+                </div>
+                <div class="col">
+                    <img style="width: 8rem;height: 10rem;" src="assets/gulab-jamun.avif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top restaurant chains in Kozhikode -->
+    <section>
+        <div class="container pb-3" style="padding-top: 100px;">
+            <div class="col d-inline-flex col-12 justify-content-between">
+                <h4 class="card-title fw-bold">Top restaurant chains in Kozhikode</h4>  
+                <img style="width: 4rem;height: 2rem;" class="float-right" src="assets/arrow-icon.png" alt="">
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-2">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest1.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Chickeys</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Fried Chicken, Burger</p>
+                                <p>Kakkanchery, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-2">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest2.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Calicut Notebook</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Chinese, South Indian</p>
+                                <p>Kondotty, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-2">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest3.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Sagar Old</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Porotta, Beef</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-2">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                               <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest4.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Pizza Hut</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Pizza, Burger</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- Restaurant-with-online-deliver -->
+    <section>
+        <div class="container pb-3" style="padding-top: 30px">
+            <div>
+                <h4 class="card-title fw-bold">Restaurants with online food delivery in Kozhikode</h4>  
+            </div>
+
+        <!-- FILTER_SORT -->
+
+        <div class="row mt-4">
+            <div class="table col">
+                <p style="font-size: small;">Filter</p>
+                <img style="width: 1.2rem;height: 1.2rem;margin-left: 7px;" src="assets/filter-icon.webp" alt="">
+            </div>
+            <div style="width: 5rem;" class="table col ">
+                <p style="font-size:small;margin-right: 6px;">Sortby</h4>
+                <i style="font-size: 10px;" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">Fast Delivery</h4>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">New on Swiggy</h4>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">Rating 4.0+</h4>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">Pure Veg</h4>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">Offers</h4>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">Rs. 300- Rs.400</h4>
+            </div>
+            <div style="width: 5rem;" class="table col">
+                <h4 style="font-size:small;margin-right: 6px;font-weight: bold;margin-top: 7px;">Lessthan Rs.300</h4>
+            </div>
+        </div>
+
+        <!-- Restaurant-rows -->
+            <div class="row">
+            <!-- ROW-1 -->
+
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest5.png" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;" class="mt-2">Rahman Hotel</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Nadan Food</p>
+                                <p>Kakkanchery, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest6.png" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;" class="mt-2">New Sagar</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Chinese, South Indian</p>
+                                <p>Kondotty, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest7.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold; "class="mt-2">Soofi Mandhi</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Porotta, Beef</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                               <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest8.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Sub Way</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Drinks, Burger</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            
+            <!-- ROW-2 -->
+            
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest9.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Indiana Burgers</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Sandwich, Burgers</p>
+                                <p>Kottakkal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest10.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Cupcake Bills</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Cupcake, Cakes</p>
+                                <p>Kondotty, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest11.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Indian Cofee House</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Dosha, Idli</p>
+                                <p>Arayidathupalam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                               <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest12.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Starbucks</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Coffee, Snacks</p>
+                                <p>Mananchira, Calicut</p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <!-- Row-3 -->
+
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest1.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Chickeys</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Fried Chicken, Burger</p>
+                                <p>Kakkanchery, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest2.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Calicut Notebook</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Chinese, South Indian</p>
+                                <p>Kondotty, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest3.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Sagar Old</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Porotta, Beef</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                               <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest4.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Pizza Hut</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Pizza, Burger</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+
+                <!-- Row-4 -->
+
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest5.png" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;" class="mt-2">Rahman Hotel</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Nadan Food</p>
+                                <p>Kakkanchery, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  h-100 w-100" src="assets/rest6.png" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;" class="mt-2">New Sagar</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Chinese, South Indian</p>
+                                <p>Kondotty, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest7.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold; "class="mt-2">Soofi Mandhi</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Porotta, Beef</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 col-sm-6 mt-4">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                               <img style="border-radius: 20px;" class="img-fluid  w-100 h-100" src="assets/rest8.jpg" alt="">
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h5 style="font-weight: bold;"class="mt-2">Sub Way</h5>
+                                <p class="fw-bold"><img style="width: 17px;border-radius: 25px;height: 17px;margin-right: 5px;" src="assets/green-star.png" alt="">4.5 10-20 mins</p>
+                                <p>Drinks, Burger</p>
+                                <p>Edappal, Calicut</p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- Best Places eat accross India -->
+    <section>
+        <div style="margin-top: 3rem;" class="container">
+            <div class="row">
+                <!-- heading -->
+                <div>
+                    <h4 class="card-title fw-bold mb-2">Best Place to Eat Across Cities</h4>  
+                </div>
+                <!-- ROW-1 -->
+                <div class="col col-sm-6 col-md-6 mt-2 " style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                     <p style="margin-top: 8px; font-weight: 600;text-align: center;" class="my-3">Best Restaurants Bangalore</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-2" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="margin-top: 8px;font-weight: 600;text-align: center;" class="my-3">Best Restaurant Pune</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-2" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Mumbai</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-2" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Delhi</p>
+                </div>
+                <!-- ROW-2 -->
+                <div class="col col-sm-6 col-md-6 mt-4 " style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                    <p style="margin-top: 8px; font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Hariyana</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="margin-top: 8px;font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Kerala</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Hyderabad</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Chandigrah</p>
+               </div>
+               <!-- Row-3 -->
+               <div class="col col-sm-6 col-md-6 mt-4 " style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                   <p style="margin-top: 8px; font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Chennai</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="margin-top: 8px;font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Nagpur</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Best Restaurant in Jaipur</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Show more<i class="fa-solid fa-chevron-down" style="color: #000000;margin-left: 10px;"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best cuisine near me -->
+    <section>
+        <div style="margin-top: 3rem;" class="container">
+            <div class="row">
+                <!-- heading -->
+                <div>
+                    <h4 class="card-title fw-bold mb-2">Best Cuisines near me</h4>  
+                </div>
+                <!-- ROW-1 -->
+                <div class="col col-sm-6 col-md-6 mt-2 " style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                     <p style="margin-top: 8px; font-weight: 600;text-align: center;" class="my-3">Chinese Restaurants Near me</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-2" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="margin-top: 8px;font-weight: 600;text-align: center;" class="my-3">South Indian Restaurant Near me</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-2" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="font-weight: 600;text-align: center;" class="my-3">North Indian Restaurant Near me</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-2" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="font-weight: 600;text-align: center;" class="my-3">Italian Rates Restaurant Near me</p>
+                </div>
+                <!-- ROW-2 -->
+                <div class="col col-sm-6 col-md-6 mt-4 " style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                    <p style="margin-top: 8px; font-weight: 600;text-align: center;" class="my-3">Explore Restaurants Near me</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="margin-top: 8px;font-weight: 600;text-align: center;" class="my-3">Russian Restaurant Near me</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">French Restaurant Near me</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Chinese Restaurant Near me</p>
+               </div>
+               <!-- Row-3 -->
+               <div class="col col-sm-6 col-md-6 mt-4 " style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                   <p style="margin-top: 8px; font-weight: 600;text-align: center;" class="my-3">Russian Restaurants Near me</p>
+               </div>
+               <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="margin-top: 8px;font-weight: 600;text-align: center;" class="my-3">Iranian Restaurant Near me</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Arabic Restaurant Near me</p>
+                </div>
+                <div class="col  col-sm-6 ms-1 mt-4" style="width: 20rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                   <p style="font-weight: 600;text-align: center;" class="my-3">Show more<i class="fa-solid fa-chevron-down" style="color: #000000;margin-left: 10px;"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Explore near me -->
+    <section>
+        <div style="margin-top: 3rem;" class="container">
+            <div class="row">
+                <div>
+                    <h4 class="card-title fw-bold mb-2">Explore every Restaurant Near me</h4>  
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 mt-2 " style="width: 40rem;height: 3.4rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;">
+                     <p style="margin-top: 15px; font-weight: 600;text-align: center;">Explore Restaurants Near me</p>
+                </div>
+                <div class="col col-12 col-sm-12 ms-1 mt-2" style="width: 40rem;height: 3.4rem;border: 1px solid rgba(0, 0, 0, 0.186);border-radius: 15px;text-align: center;">
+                    <p style="margin-top: 15px;font-weight: 600;">Explore Top Rates Restaurant Near me</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <!-- PLAYSTORE_APPSTORE -->
+    <section>
+        <div style="background-color: rgb(218, 220, 221);" class="row mt-5 py-3 inline-flex">     
+            <div class="col">
+                <h3 style="font-weight: 1000;color: rgb(92, 90, 90);float: inline-end;" class="ms-2">
+                    For bettter experience,download <br> the Swiggy app now</h3>
+            </div>
+            <div class="col ">
+                <img style="width: 12rem;" src="assets/playstore.avif" alt="">
+                <img style="width: 12rem;" src="assets/appstore.avif" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-body-tertiary ">
+    <!-- Section  -->
+    <section style="color: rgb(168, 163, 163);" class="bg-black pt-5 pb-3">
+      <div class="container text-center text-md-start bg-black">
+        <!-- Grid row -->
+        <div class="row mt-">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-5">
+            <!-- Content -->
+            <h3 style="color: #ffffff;"  class="fw-bold mb-2">
+              <img src="assets/logo-black.png" class="" style="width: 2.5rem;">Swiggy
+            </h3>
+            <p>© 2024 Bundl Technologies <br> Pvt. Ltd</p>
+          </div>
+          <div style="line-height: 2.3rem;font-size: large;" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-5">
+            <!-- Company -->
+            <h5 style="color: #ffffff;" class=" fw-bold mb-2">Company</h5>
+            <p>About</p>
+            <p>Careers</p>
+            <p>Team</p>
+            <p>Swiggy One</p>
+            <p>Swiggy Instamart</p>
+            <p>Swiggy Genie</p>
+          </div>
+          <div style="line-height: 2.3rem;font-size: large;" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5">
+            <!-- Contact -->
+            <h5  style="color: #ffffff;" class=" fw-bold mb-2">Contact us</h5>
+            <p>Help & Support</p>
+            <p>Partner with us</p>
+            <p>Ride with us</p>
+            <br><br>
+            <h5  style="color: #ffffff;" class=" fw-bold mb-2">Legal</h5>
+            <p>Terms & Conditions</p>
+            <p>Cookie Policy</p>
+            <p>Privacy Policy</p>
+            <p>Investor Relations</p>
+          </div>
+          <div style="line-height: 2.3rem;font-size: large;" class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Deliver -->
+            <h5  style="color: #ffffff;" class=" fw-bold mb-2">We deliver to:</h5>
+            <p>Banglore</p>
+            <p> Gurgaon</p>
+            <p> Hyderabad</p>
+            <p> Delhi</p>
+            <p> Mumbai</p>
+            <p>Pune</p>
+            <p style="font-size: medium;" class="ms-2">589 cities<i class="fa-solid fa-chevron-down" style="color: #ffffff;margin-left: 10px;"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- Footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
